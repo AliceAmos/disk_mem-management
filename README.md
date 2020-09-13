@@ -8,17 +8,25 @@ In case the input is illegal or there is an error (not executable, or no such co
 
 The user's input is a number according to the command he wishes to make. The possible commands are:
 0 - delete the disk and exit.
+
 1 - print the whole content of the disk.
       A list of the files, their fd and their status (open/closed) will show on screen.
+      
 2 - format the disk. After this action the user should enter number of direct blocks and block size.
       amount of free blocks (at this point) will show on screen.
+      
 3 - create a new file. The user should enter the name of the file.
       The file's file descriptor will show.
+      
 4 - open a file. The user should enter the file's name.
        The file's file descriptor will show.
+       
 5 - close a file. The user should enter the file's name.
       The file's file descriptor will show.
+      
 6 - write to a file. The user should enter the file's file descriptor, a string he wishes to write and its length.
+
 7 - read from a file. The user should enter the file's file descriptor and how many characters he wants to read from the file.
       What was read from the file will show on screen.
+      
 8 - delete a file. The user should enter the file's name.
